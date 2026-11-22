@@ -18,6 +18,7 @@ Le macro cartelle sono il catalogo: per usare una skill in Claude Code, copiane 
 |---|---|---|
 | `produzione-contenuti/` | reel, video ads, montaggio, grafiche animate, idee di format | `/social` |
 | `siti-e-landing/` | landing, siti clienti, identità visiva | `landing-food-grafica`, `lancio-funnel` |
+| `ricerca-e-creazione-inserzioni/` | ricerca competitor e mercato, inserzioni Meta, strumenti tecnici | richiesta diretta |
 | `.claude/skills/` | formati file (docx, xlsx, pptx, pdf) e design generali, da anthropics/skills | caricate in automatico |
 
 ## Classificazione di tutte le skill dell'account
@@ -25,10 +26,9 @@ Le macro cartelle sono il catalogo: per usare una skill in Claude Code, copiane 
 | Macro area | Skill | Come si chiamano |
 |---|---|---|
 | **Produzione contenuti** | social (ingresso), reel-fuori-scala, audit-contenuti-instagram, punteggio-profilo-instagram, repurpose-contenuti, ricciardi-copy, marketing-psychology, montaggio-video-drive, motion-grafiche, video-making | `/social` oppure la richiesta diretta |
-| **Advertising Meta** | meta-ads-setup, ad-library-monitoring, competitor-analysis (+ ricciardi-copy per i testi) | richiesta diretta |
 | **Funnel, landing e siti** | landing-food-grafica, lancio-funnel | richiesta diretta |
 | **Metodo di lavoro** | grill-me, handoff | solo su richiesta esplicita (`/grill-me`, `/handoff`) |
-| **Ricerca e tecnica** | deep-research, reverse-engineering, skill-creator | richiesta diretta |
+| **Ricerca e creazione inserzioni** | ad-library-monitoring, competitor-analysis, deep-research, meta-ads-setup, reverse-engineering, skill-creator (+ ricciardi-copy per i testi) | richiesta diretta |
 | **Formati file** (Anthropic) | docs, docx, xlsx, pptx, pdf, google-workspace | automatiche in base al formato |
 | **Browser e computer** (Anthropic) | chrome-browser, built-in-browser, computer-use | automatiche quando si usa il browser o il PC |
 | **Poco usate** (Anthropic) | morning, import-memory | si possono disattivare dalle impostazioni skill |
