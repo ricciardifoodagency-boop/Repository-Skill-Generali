@@ -14,18 +14,19 @@ Sull'account Claude il punto d'ingresso unico è la skill **`social`** (`/social
 | `repurpose-contenuti` | idee | da un contenuto lungo a una settimana di post |
 | `ricciardi-copy` | scrittura | tutti i testi: script, caption, promo, format |
 | `marketing-psychology` | scrittura (supporto) | leve psicologiche |
-| `montaggio-video-drive` | montaggio | girati dal Drive: tagli, 9:16, audio, sottotitoli, copertine |
+| `montaggio-video-drive` | montaggio | girati dal Drive: tagli, 9:16, audio, sottotitoli, copertine (motore di taglio consigliato: `esterne/video-use`) |
 | `motion-grafiche` | grafica animata | **nuova**, in questa cartella: aperture, prezzi, grafici, traguardi, loghi animati |
 | `video-making` | video da zero | skill generica di Anthropic per video nuovi senza girato |
 
 ## Skill esterne messe da parte (originali, licenza MIT)
 
-`esterne/` contiene gli originali da cui è stata adattata `motion-grafiche`. Non vanno caricati sull'account così come sono: sono in inglese, pensati per SaaS e newsletter, e farebbero partire skill doppie.
+`esterne/` contiene gli originali da cui è stata adattata `motion-grafiche` e le skill esterne di editing. Non vanno caricati sull'account così come sono: sono in inglese, pensati per SaaS e newsletter, e farebbero partire skill doppie.
 
 | Origine | Skill tenute | Perché |
 |---|---|---|
 | charlie947/motion-graphics-skills | `reel-export`, `motion-effects` (16 ricette), `animated-chart`, `milestone-reveal`, `reference-to-motion`, `motion-brief-writer`, `brand-intake` | metodo per animazioni in codice rese in MP4, export reel che Meta accetta, scomposizione dei riferimenti |
 | Moh4696/open-3d-skills | `frame-capture`, `alpha-cutout` | registrare una pagina animata in MP4 fluido; scontornare un video (piatto o persona) su sfondo trasparente |
+| browser-use/video-use | `video-use` (completa, con gli script) | **editing**: monta i girati partendo dalla trascrizione (tagli sulle parole, scelta dei ciak, grade, sottotitoli, audio). Verificata e resa gratuita con la trascrizione locale `transcribe_whisper.py`: vedi `esterne/video-use/ADATTAMENTO-AGENZIA.md` |
 
 Scartate dal pacchetto charlie947: launch-video, apple-launch-film, vox-explainer, newsletter-promo, loop-cover, model-showdown, title-sequence-3d, motion-prompt-writer (sono per lanci SaaS e newsletter, oppure scrivono prompt per "Claude Motion", che sull'account non è disponibile).
 
