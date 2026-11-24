@@ -1,26 +1,36 @@
 # Repository Skill Generali
 
-Store centrale di skill riutilizzabili per Claude Code, condivise tra tutti i
-progetti dell'account.
+Store centrale delle skill di Ricciardi Food Agency, divise in macro cartelle.
+Le skill nascono e si aggiornano qui; poi si caricano sull'account Claude dell'agenzia.
 
-## Come usarle in qualsiasi sessione
+## Come usarle in Claude Code
 
 In una sessione di Claude Code su un altro progetto, aggiungi questo repo:
 
 > aggiungi il repo `ricciardifoodagency-boop/Repository-Skill-Generali`
 
-Claude Code caricherà automaticamente le skill in `.claude/skills/` e potrai
-richiamarle al bisogno.
+Claude Code carica in automatico solo le skill in `.claude/skills/` (formati file e design generali).
+Le macro cartelle sono il catalogo: per usare una skill in Claude Code, copiane la cartella in `.claude/skills/` del progetto.
 
-## Skill disponibili
+## Macro cartelle
 
-| Skill | Uso |
-|-------|-----|
-| `docx` | Creare / leggere / modificare documenti Word `.docx` |
-| `xlsx` | Fogli di calcolo `.xlsx`, `.xlsm`, `.csv`, `.tsv` |
-| `pptx` | Presentazioni PowerPoint `.pptx` |
-| `pdf` | Leggere, unire, dividere, compilare, OCR e creare PDF |
-| `frontend-design` | Direzione visiva e design per UI frontend |
-| `brand-guidelines` | Applicare colori e tipografia del brand |
+| Cartella | Contenuto | Punto d'ingresso sull'account |
+|---|---|---|
+| `produzione-contenuti/` | reel, video ads, montaggio, grafiche animate, idee di format | `/social` |
+| `siti-e-landing/` | landing, siti clienti, identità visiva | `landing-food-grafica`, `lancio-funnel` |
+| `ricerca-e-creazione-inserzioni/` | ricerca competitor e mercato, inserzioni Meta, strumenti tecnici | richiesta diretta |
+| `.claude/skills/` | formati file (docx, xlsx, pptx, pdf) e design generali, da anthropics/skills | caricate in automatico |
 
-Le skill provengono da [anthropics/skills](https://github.com/anthropics/skills).
+## Classificazione di tutte le skill dell'account
+
+| Macro area | Skill | Come si chiamano |
+|---|---|---|
+| **Produzione contenuti** | social (ingresso), reel-fuori-scala, audit-contenuti-instagram, punteggio-profilo-instagram, repurpose-contenuti, ricciardi-copy, marketing-psychology, montaggio-video-drive, motion-grafiche, video-making | `/social` oppure la richiesta diretta |
+| **Funnel, landing e siti** | landing-food-grafica, lancio-funnel | richiesta diretta |
+| **Metodo di lavoro** | grill-me, handoff | solo su richiesta esplicita (`/grill-me`, `/handoff`) |
+| **Ricerca e creazione inserzioni** | ad-library-monitoring, competitor-analysis, deep-research, meta-ads-setup, reverse-engineering, skill-creator (+ ricciardi-copy per i testi) | richiesta diretta |
+| **Formati file** (Anthropic) | docs, docx, xlsx, pptx, pdf, google-workspace | automatiche in base al formato |
+| **Browser e computer** (Anthropic) | chrome-browser, built-in-browser, computer-use | automatiche quando si usa il browser o il PC |
+| **Poco usate** (Anthropic) | morning, import-memory | si possono disattivare dalle impostazioni skill |
+
+Le skill dell'agenzia derivano dai playbook del Secondo Cervello (`04-tech-ai/agenti-e-skill.md`): quando cambia un playbook si aggiorna la skill, non il contrario.
